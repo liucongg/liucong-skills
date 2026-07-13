@@ -1,0 +1,7 @@
+interface:
+  display_name: "电影感三渲二"
+  short_description: "默认 MJ V8.1 的三渲二短片提示词流程"
+  default_prompt: "Use $painterly-3d2-cinema to turn one sentence into a prompt-only cinematic 3D-to-2D short-film package using Midjourney V8.1 for images and Seedance for video."
+
+policy:
+  allow_implicit_invocation: true
