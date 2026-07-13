@@ -40,14 +40,6 @@ cp -R skills/painterly-3d2-cinema "$SKILLS_HOME/"
 $painterly-3d2-cinema 做一条 15 秒的三渲二动作短片，白发男光剑士在雨夜湖岸迎战机械敌人。
 ```
 
-### 运行示例
-
-点击下方截图查看完整运行示例：
-
-<a href="docs/assets/painterly-3d2-cinema-example.png">
-  <img src="docs/assets/painterly-3d2-cinema-example.png" alt="painterly-3d2-cinema 完整运行示例" width="360">
-</a>
-
 也可以直接描述需求；当任务涉及三渲二角色、场景、动作故事板或短片提示词时，支持自动识别 Skill 的 Agent 可以自动触发它。
 
 默认工作流为：
