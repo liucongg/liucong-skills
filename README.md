@@ -7,6 +7,7 @@
 | Skill | 用途 |
 | --- | --- |
 | [`painterly-3d2-cinema`](skills/painterly-3d2-cinema/) | 把一句话扩展成三渲二动作短片提示词生产包，覆盖剧情方向、角色、场景、Midjourney V8.1 故事板和 Seedance 视频提示词。只生成提示词，不直接生成图片或视频。这个 Skill 在视频平台的 Agent 上使用，效果更佳。 |
+| [`gzh-title-strategist`](skills/gzh-title-strategist/) | 分析微信公众号文章，基于文章真实价值、目标读者、事实证据和历史数据生成、改写、批评并排序多风格标题，同时检查标题党、关键词堆砌与时效风险。 |
 
 ## 安装 `painterly-3d2-cinema`
 
@@ -32,7 +33,7 @@ cp -R skills/painterly-3d2-cinema "$SKILLS_HOME/"
 
 复制安装后，仓库更新不会自动同步，需要重新复制。安装完成后，重新加载平台的 Skills 列表或重启对应 Agent，使 Skill 被重新发现。
 
-## 使用方法
+## 使用 `painterly-3d2-cinema`
 
 在 Agent 对话中显式调用 Skill：
 
@@ -51,6 +52,42 @@ $painterly-3d2-cinema 做一条 15 秒的三渲二动作短片，白发男光剑
 5. 根据故事板输出对应的 Seedance 视频提示词。
 
 该 Skill 只交付提示词。图片需要在 Midjourney 外部生成，视频需要在 Seedance 外部生成，再把结果上传给 Agent 检查和继续迭代。
+
+## 安装 `gzh-title-strategist`
+
+推荐使用软链接安装，仓库里的修改会立即同步到 Agent 的 Skills 目录：
+
+```bash
+export SKILLS_HOME="/path/to/your-agent/skills"
+mkdir -p "$SKILLS_HOME"
+ln -s "$(pwd)/skills/gzh-title-strategist" "$SKILLS_HOME/gzh-title-strategist"
+```
+
+也可以复制安装：
+
+```bash
+export SKILLS_HOME="/path/to/your-agent/skills"
+mkdir -p "$SKILLS_HOME"
+cp -R skills/gzh-title-strategist "$SKILLS_HOME/"
+```
+
+## 使用 `gzh-title-strategist`
+
+将完整文章、草稿或已有标题交给 Agent，并显式调用 Skill：
+
+```text
+$gzh-title-strategist 根据这篇文章生成一组公众号标题，并选出最值得发布的 3 个。
+```
+
+也可以让它复盘已有标题：
+
+```text
+$gzh-title-strategist 结合这些文章的阅读和互动数据，分析哪些标题写法有效，哪些可能只是选题或发布时间带来的影响。
+```
+
+该 Skill 会先诊断文章类型、目标读者、核心结论、事实证据和可交付内容，再生成稳健准确型、网感点击型、专业权威型、数据关键词型和长期型标题。默认会对前 5 名进行评分，并给出 1 个主标题、2 个备选标题及风险提示。
+
+涉及热词或历史数据时，它只使用 Skill 内置的历史样本或用户提供的证据，不会把关键词相关性描述为微信推荐算法规则，也不会为了点击率添加正文没有依据的公司、产品、数字或夸张结论。
 
 ## 更新
 
