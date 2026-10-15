@@ -1,0 +1,17 @@
+{
+  "version": "0.3.1",
+  "description": "制作含结构、原理和步骤插图的可编辑 Word 手册。",
+  "identity_scan": "passed",
+  "sample_word_pages": 5,
+  "neutral_documents": 6,
+  "docx_metadata": "empty creator and modifier",
+  "scope": "Neutral content, package checks and local toolchain; no new rights or scientific certification.",
+  "platforms_tested": [
+    "macOS"
+  ],
+  "platforms_not_tested": [
+    "Linux",
+    "Windows",
+    "other Agent hosts"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "填写真实标题",
+  "subtitle": "填写范围明确的副标题",
+  "reader": "无专业背景但好奇的成年人",
+  "mode": "real-structure",
+  "scope": "指定对象与边界，不是工程制造图",
+  "font": "Noto Sans CJK SC",
+  "sources": [
+    {"id":"S01","title":"请替换为实际回读来源","url":"https://example.org/source-1","kind":"official","verified":false,"retrieved_on":"","excerpt":"","license":"reference-only"},
+    {"id":"S02","title":"请替换为实际回读来源","url":"https://example.org/source-2","kind":"textbook","verified":false,"retrieved_on":"","excerpt":"","license":"reference-only"},
+    {"id":"S03","title":"请替换为实际回读来源","url":"https://example.org/source-3","kind":"reference","verified":false,"retrieved_on":"","excerpt":"","license":"reference-only"}
+  ],
+  "claims": [{"id":"C01","text":"填写本图解释的具体机制","source_ids":["S01"],"status":"unverified","critical":true}],
+  "parts": [{"id":"P01","name":"填写稳定部件名称","color":"#527d83"}],
+  "figures": [{"id":"F01","kind":"overview","question":"读者看完这张图能回答什么？","svg":"figures/overview.svg","png":"figures/overview.png","width_mm":164,"caption":"填写看点、读法、结论和简化限制。","alt_text":"填写不依赖颜色的结构说明。","claim_ids":["C01"],"part_ids":["P01"],"source_ids":["S01"],"provenance":"original"}],
+  "pages": [{"title":"一页要回答的真实问题","kicker":"01 · 认识结构","lead":"一句具体而自然的引导。","blocks":[{"type":"paragraph","text":"先说明问题与可理解的背景，再读图。[S01]"},{"type":"figure","id":"F01"},{"type":"callout","label":"这个图不表示什么","text":"写明关键简化，防止把示意当作真实制造或维修依据。"}]}],
+  "include_sources": true,
+  "include_toc": false
+}

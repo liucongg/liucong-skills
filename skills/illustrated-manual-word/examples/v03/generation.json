@@ -1,0 +1,11 @@
+{
+  "prompt": "Editorial photograph for a Chinese illustrated science handbook about how water moves. Wide close-up on a single continuous clear stream of water being poured from an unbranded transparent glass pitcher at upper left into a low clear glass beaker at lower right, on a clean ivory laboratory tabletop. The pouring spout, the stream and the receiving beaker are all fully visible, correct real-world fluid shape, subtle ripples, soft natural daylight from left, desaturated cool grey glass with a tiny rich cobalt-blue reflection only, refined DK science book photography, exceptionally clean studio composition, calm, precise and tactile, no people, no hands, no labels, no measurement graduations, no text, no logos, no needles, no pumps, no cutaway diagrams, no arrows. Horizontal framing; subject occupies middle of frame with generous uncluttered margins. This is a context photograph, not an engineering illustration.",
+  "provider": "xai",
+  "model": "grok-imagine-image-2.0",
+  "generated_on": "2026-10-12",
+  "reference_asset_ids": [],
+  "edit_prompt": "Keep the entire photograph, pitcher, receiving glass, water stream, framing, lighting and off-white background exactly as they are. Remove the dark blue oval/object/reflection inside the left pitcher and make that region ordinary transparent clear water and subtle neutral grey glass reflections. There must be no colored object or blue blob in either glass. This is a clean editorial science context photograph. Do not add any text, logos, graduations, arrows or new objects.",
+  "attempts": 2,
+  "role": "context",
+  "limitation": "AI情境插图；并非实拍、原理证据或产品结构图。首次结果的蓝色异物经一次编辑纠正；最终图须另看图验收。"
+}

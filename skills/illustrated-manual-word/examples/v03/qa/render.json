@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "renderer": "LibreOffice",
+  "docx_sha256": "257532022f26f0845a06d6e95dccce6da46ff88c2f0803c287a36d3a43e41f57",
+  "pdf_sha256": "fbbba0fb1c74ee7867d6fc900c3953ad1f776110a53c99a98e8567f8425db6ea",
+  "page_count": 5,
+  "pages": [
+    {
+      "page": 1,
+      "path": "page-001.png",
+      "text_chars": 238,
+      "reviewed": false
+    },
+    {
+      "page": 2,
+      "path": "page-002.png",
+      "text_chars": 352,
+      "reviewed": false
+    },
+    {
+      "page": 3,
+      "path": "page-003.png",
+      "text_chars": 262,
+      "reviewed": false
+    },
+    {
+      "page": 4,
+      "path": "page-004.png",
+      "text_chars": 311,
+      "reviewed": false
+    },
+    {
+      "page": 5,
+      "path": "page-005.png",
+      "text_chars": 494,
+      "reviewed": false
+    }
+  ],
+  "blank_text_pages": [],
+  "layout_reviewed": false,
+  "note": "Open final page images; do not mark reviewed from tool success alone."
+}

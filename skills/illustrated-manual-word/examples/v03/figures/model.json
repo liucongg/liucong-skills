@@ -1,0 +1,27 @@
+{
+  "watch": {
+    "case_reused": true,
+    "button": "back-lower",
+    "remove_slide": "left",
+    "insert_slide": "right"
+  },
+  "pump": {
+    "working_chamber": "left-of-piston",
+    "flow": "bottom-in/top-out",
+    "states": [
+      {
+        "name": "suction",
+        "piston_x": 745,
+        "inlet_open": true,
+        "outlet_open": false
+      },
+      {
+        "name": "delivery",
+        "piston_x": 545,
+        "inlet_open": false,
+        "outlet_open": true
+      }
+    ],
+    "notice": "Textbook single-acting piston model; not a named product or pressure-rated design."
+  }
+}

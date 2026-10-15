@@ -1,0 +1,126 @@
+{
+  "assets": [
+    {
+      "id": "A01",
+      "path": "figures/watch-locate.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "先在哪里按？",
+      "alt_text": "表背、表带连接端与被强调的下方释放按钮。",
+      "source_ids": [
+        "S1"
+      ],
+      "width_mm": 150,
+      "sha256": "701dc6143b01aec7ca47927ae7fabba7492c5d861414c972c933ebe50308481e",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/watch-locate.svg"
+    },
+    {
+      "id": "A02",
+      "path": "figures/watch-remove.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "按住之后向哪里滑？",
+      "alt_text": "两幅共享结构的手表背面图，按钮保持按下，表带向左滑出。",
+      "source_ids": [
+        "S1"
+      ],
+      "width_mm": 164,
+      "sha256": "7804a80cee07b8e2dc6b8f1377b9105d8f3728c9341407b1a69abadf6df72f4d",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/watch-remove.svg"
+    },
+    {
+      "id": "A03",
+      "path": "figures/watch-insert.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "新表带如何装回？",
+      "alt_text": "新表带从左向右滑入同一条连接槽。",
+      "source_ids": [
+        "S1"
+      ],
+      "width_mm": 164,
+      "sha256": "fac0a42741d57c7670cf122e548671312b4c929e1661fe3eaf91e1ed6e4d0129",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/watch-insert.svg"
+    },
+    {
+      "id": "A04",
+      "path": "figures/watch-check.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "装好后怎样判断？",
+      "alt_text": "锁定、卡住和未锁住三种情况的短检查提示。",
+      "source_ids": [
+        "S1"
+      ],
+      "width_mm": 164,
+      "sha256": "39deb17d06d3371a9225639bf4cdb906d4a0f6ed167166a91c87b8f175375d69",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/watch-check.svg"
+    },
+    {
+      "id": "A05",
+      "path": "figures/water-context.png",
+      "method": "generated",
+      "role": "context",
+      "purpose": "先观察一个熟悉的水流情境",
+      "alt_text": "清水从玻璃壶连续流入杯中，无机构或数据标注。",
+      "source_ids": [],
+      "width_mm": 148,
+      "sha256": "1a972a68053488d305516b0554fb8a3c5cfbf92195e5ee8fc9f4f5401f687fbf",
+      "rights": "AI生成情境插图；对外使用须遵守当前生成服务条款。",
+      "decision_reason": "情境与玻璃/水材质不含产品结构或参数，采用生成图片并明确限制。",
+      "generation": {
+        "prompt": "Editorial photograph for a Chinese illustrated science handbook about how water moves. Wide close-up on a single continuous clear stream of water being poured from an unbranded transparent glass pitcher at upper left into a low clear glass beaker at lower right, on a clean ivory laboratory tabletop. The pouring spout, the stream and the receiving beaker are all fully visible, correct real-world fluid shape, subtle ripples, soft natural daylight from left, desaturated cool grey glass with a tiny rich cobalt-blue reflection only, refined DK science book photography, exceptionally clean studio composition, calm, precise and tactile, no people, no hands, no labels, no measurement graduations, no text, no logos, no needles, no pumps, no cutaway diagrams, no arrows. Horizontal framing; subject occupies middle of frame with generous uncluttered margins. This is a context photograph, not an engineering illustration.",
+        "provider": "xai",
+        "model": "grok-imagine-image-2.0",
+        "generated_on": "2026-10-12",
+        "reference_asset_ids": [],
+        "edit_prompt": "Keep the entire photograph, pitcher, receiving glass, water stream, framing, lighting and off-white background exactly as they are. Remove the dark blue oval/object/reflection inside the left pitcher and make that region ordinary transparent clear water and subtle neutral grey glass reflections. There must be no colored object or blue blob in either glass. This is a clean editorial science context photograph. Do not add any text, logos, graduations, arrows or new objects.",
+        "attempts": 2,
+        "role": "context",
+        "limitation": "AI情境插图；并非实拍、原理证据或产品结构图。首次结果的蓝色异物经一次编辑纠正；最终图须另看图验收。"
+      }
+    },
+    {
+      "id": "A06",
+      "path": "figures/pump-overview.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "容积和单向阀各负责什么？",
+      "alt_text": "活塞泵剖面展示缸壁、密封活塞、杆与导向、两只阀、支架及基座。",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "width_mm": 156,
+      "sha256": "04d033a1b4dfb438473d18b3fac0136185cb0a67d832cba7ad8fc595f110199c",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/pump-overview.svg"
+    },
+    {
+      "id": "A07",
+      "path": "figures/pump-strokes.png",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "为什么往返运动没有把水原路推回？",
+      "alt_text": "吸入时入口阀开出口关；排出时入口关出口开。",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "width_mm": 146,
+      "sha256": "118380b8e853ff7ef7ac3de5b8c4fddabb05f48aec10ecd0f7ecb9dbd319aecc",
+      "rights": "原创技术重绘，基于公开说明作个人评估，非官方且无品牌授权；不含官方原页。",
+      "decision_reason": "结构/方向/状态需确定且同源，选择SVG，不用独立生图猜机构。",
+      "svg": "figures/pump-strokes.svg"
+    }
+  ]
+}

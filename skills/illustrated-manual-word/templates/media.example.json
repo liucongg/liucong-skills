@@ -1,0 +1,19 @@
+{
+  "assets": [
+    {
+      "id": "A01",
+      "path": "figures/overview.png",
+      "svg": "figures/overview.svg",
+      "method": "svg",
+      "role": "technical",
+      "purpose": "这里写图要回答的具体读者问题",
+      "decision_reason": "需要同源结构和确定的状态，选择SVG而非独立生图",
+      "source_ids": ["S01"],
+      "alt_text": "用短句描述图中的结构和动作",
+      "rights": "原创重绘；品牌资料是事实参考，另核对外复刻/转载授权",
+      "sha256": "REPLACE_WITH_ACTUAL_FILE_HASH",
+      "width_mm": 164
+    }
+  ],
+  "notice": "这是待填模板，不是验收通过的图片记录。existing/hybrid需来源网页、原图URL、回读日期和usage；generated需实际generation记录。"
+}

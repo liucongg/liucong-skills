@@ -1,0 +1,421 @@
+{
+  "schema_version": "0.3",
+  "media_manifest": "media.json",
+  "delivery_kind": "sample-chapter",
+  "sample_objectives": [
+    "正确表达真实对象的按压/滑动",
+    "同源剖面与两个阀状态",
+    "正确区分生成情境图与原理证据"
+  ],
+  "sample_limits": "两个可阅读样章，不是整本百科、厂家手册或毫米级1:1认证；不宣称用户已经认可审美。",
+  "title": "表带更换与活塞泵 · 图解样章",
+  "reader": "无专业背景的成年人",
+  "mode": "real-structure",
+  "scope": "表带更换操作与单作用活塞泵原理的非官方教学说明。",
+  "series": "图解样章",
+  "font": "PingFang SC",
+  "page_layout": "fixed",
+  "design": {
+    "accent": "263338",
+    "ink": "263338",
+    "body_pt": 10.3,
+    "heading_pt": 23,
+    "line_spacing": 1.19
+  },
+  "sources_on_new_page": true,
+  "include_sources": true,
+  "figure_notice": "图版说明：表带操作图与泵剖面为原创SVG绘制，参数和比例不作制造依据。水流情境图由Grok Imagine生成并编辑，明确不作证据。正文、图注、表格及来源可编辑；图内标签/零件随PNG嵌入，SVG与状态定义另存。官方原图只在本地研究目录作参照，不包含在本Word或再发行Skill包中。",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Apple Support · Change your Apple Watch band",
+      "url": "https://support.apple.com/en-us/108908",
+      "kind": "official",
+      "verified": true,
+      "retrieved_on": "2026-10-12",
+      "excerpt": "Hold down the band release button, then slide the band across to remove it. Make sure that the text on the band is facing you, then slide the new band in until you feel and hear a click. Never force the band into the slot. Do not wear your Apple Watch if the band is sliding."
+    },
+    {
+      "id": "S2",
+      "title": "Virtual Labs · Single Acting Reciprocating Pump",
+      "url": "https://fm-iitk.vlabs.ac.in/exp/reciprocating-pump/theory.html",
+      "kind": "institutional",
+      "verified": true,
+      "retrieved_on": "2026-10-12",
+      "excerpt": "When the piston moves towards right, the suction valve opens and liquid is forced into the left side of the piston. When the piston moves to the left, high pressure builds up, the delivery valve opens and liquid is forced into the delivery pipe."
+    },
+    {
+      "id": "S3",
+      "title": "Engineers Edge · Positive Displacement Pump Operation",
+      "url": "https://www.engineersedge.com/pumps/positive_disp_pump_operation.htm",
+      "kind": "reference",
+      "verified": true,
+      "retrieved_on": "2026-10-12",
+      "excerpt": "Check valves in the suction and discharge ports allow flow in only one direction. The volume of liquid moved in one cycle equals the change in cylinder liquid volume during the piston travel."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "表带释放按钮需持续按住；沿槽滑出而非向外拔或扭。",
+      "source_ids": [
+        "S1"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "C2",
+      "text": "表带文字朝向操作者，滑入直到感到并听到咔嗒声；未锁住不能佩戴。",
+      "source_ids": [
+        "S1"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "C3",
+      "text": "本单作用教学模型右移活塞增加左侧工作腔，吸入时入口开出口关；排出时相反。",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "status": "verified"
+    }
+  ],
+  "parts": [
+    {
+      "id": "W1",
+      "name": "表壳背面"
+    },
+    {
+      "id": "W2",
+      "name": "表带释放按钮"
+    },
+    {
+      "id": "W3",
+      "name": "表带连接端"
+    },
+    {
+      "id": "P1",
+      "name": "缸体/左侧工作腔"
+    },
+    {
+      "id": "P2",
+      "name": "活塞/活塞杆/密封圈"
+    },
+    {
+      "id": "P3",
+      "name": "入口止回阀"
+    },
+    {
+      "id": "P4",
+      "name": "出口止回阀"
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "asset_id": "A01",
+      "method": "svg",
+      "role": "technical",
+      "kind": "overview",
+      "question": "先在哪里按？",
+      "caption": "下方短条按钮是操作位置；传感器只帮助辨认表背，未复刻某个机型的配置。",
+      "alt_text": "表背、表带连接端与被强调的下方释放按钮。",
+      "png": "figures/watch-locate.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C1"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "part_ids": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "width_mm": 150,
+      "svg": "figures/watch-locate.svg"
+    },
+    {
+      "id": "F02",
+      "asset_id": "A02",
+      "method": "svg",
+      "role": "technical",
+      "kind": "sequence",
+      "question": "按住之后向哪里滑？",
+      "caption": "同一表壳、同一条槽；蓝色表示持续按压与横向滑动，不表示朝屏幕外拔出。",
+      "alt_text": "两幅共享结构的手表背面图，按钮保持按下，表带向左滑出。",
+      "png": "figures/watch-remove.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C1"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "part_ids": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "width_mm": 164,
+      "svg": "figures/watch-remove.svg"
+    },
+    {
+      "id": "F03",
+      "asset_id": "A03",
+      "method": "svg",
+      "role": "technical",
+      "kind": "sequence",
+      "question": "新表带如何装回？",
+      "caption": "与滑出方向相反，沿槽装入。文字朝向操作者；勿强塞。",
+      "alt_text": "新表带从左向右滑入同一条连接槽。",
+      "png": "figures/watch-insert.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C2"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "part_ids": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "width_mm": 164,
+      "svg": "figures/watch-insert.svg"
+    },
+    {
+      "id": "F04",
+      "asset_id": "A04",
+      "method": "svg",
+      "role": "technical",
+      "kind": "detail",
+      "question": "装好后怎样判断？",
+      "caption": "三种检查与处理；具体表带的额外步骤以官方型号说明为准。",
+      "alt_text": "锁定、卡住和未锁住三种情况的短检查提示。",
+      "png": "figures/watch-check.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "part_ids": [
+        "W2",
+        "W3"
+      ],
+      "width_mm": 164,
+      "svg": "figures/watch-check.svg"
+    },
+    {
+      "id": "F05",
+      "asset_id": "A05",
+      "method": "generated",
+      "role": "context",
+      "kind": "context",
+      "question": "先观察一个熟悉的水流情境",
+      "caption": "AI情境插图，不是实拍，也不作为活塞泵内部结构的证据。",
+      "alt_text": "清水从玻璃壶连续流入杯中，无机构或数据标注。",
+      "png": "figures/water-context.png",
+      "provenance": "original",
+      "claim_ids": [],
+      "source_ids": [],
+      "part_ids": [],
+      "width_mm": 148
+    },
+    {
+      "id": "F06",
+      "asset_id": "A06",
+      "method": "svg",
+      "role": "technical",
+      "kind": "section",
+      "question": "容积和单向阀各负责什么？",
+      "caption": "教学剖面：活塞改变左侧腔体容积；两只止回阀限定从下方入口到上方出口的方向。",
+      "alt_text": "活塞泵剖面展示缸壁、密封活塞、杆与导向、两只阀、支架及基座。",
+      "png": "figures/pump-overview.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C3"
+      ],
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "part_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "width_mm": 156,
+      "svg": "figures/pump-overview.svg"
+    },
+    {
+      "id": "F07",
+      "asset_id": "A07",
+      "method": "svg",
+      "role": "technical",
+      "kind": "state-pair",
+      "question": "为什么往返运动没有把水原路推回？",
+      "caption": "上下两图共用同一缸体和阀座；只改变活塞位置、阀球位置与当前流向。蓝箭头为水流。",
+      "alt_text": "吸入时入口阀开出口关；排出时入口关出口开。",
+      "png": "figures/pump-strokes.png",
+      "provenance": "original",
+      "claim_ids": [
+        "C3"
+      ],
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "part_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "width_mm": 146,
+      "svg": "figures/pump-strokes.svg"
+    }
+  ],
+  "pages": [
+    {
+      "kicker": "样章 01 / 真实对象的操作图",
+      "title": "换表带：先松开，再滑出",
+      "lead": "动作只有两步，难点是按对位置，并在滑动时保持按住。",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "把手表屏幕朝下，放在干净的无绒软布或软垫上。先确认新表带与表壳尺寸兼容；链式表带另有拆分步骤，不直接套用本页。[S1]"
+        },
+        {
+          "type": "figure",
+          "id": "F01"
+        },
+        {
+          "type": "figure",
+          "id": "F02"
+        },
+        {
+          "type": "callout",
+          "label": "滑不动时",
+          "text": "不要增加拉力或扭转表带。重新按住释放按钮，确认没有松手，再沿连接槽滑出。"
+        }
+      ]
+    },
+    {
+      "kicker": "样章 01 / 装回与检查",
+      "title": "“滑进去了”还不等于锁好了",
+      "lead": "装回要沿原来的槽，最后确认它不会自行滑动。",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "让表带上的文字朝向你，保持连接端与槽口对齐，滑入直到感到并听到咔嗒声。不要为了追求“卡牢”把不兼容的表带硬塞进去。[S1]"
+        },
+        {
+          "type": "figure",
+          "id": "F03"
+        },
+        {
+          "type": "figure",
+          "id": "F04"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "你看到的情况",
+            "下一步"
+          ],
+          "rows": [
+            [
+              "不按释放按钮，表带仍自由滑动",
+              "不要佩戴；按官方指南重新安装。"
+            ],
+            [
+              "听不到咔嗒声或无法锁住",
+              "勿强塞，核对尺寸与连接端方向。"
+            ],
+            [
+              "使用链式表带、海洋/回环等款式",
+              "查对应款式的额外步骤，不把通用双图当全套指南。"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "图版范围",
+          "text": "这里忠实重建操作位置与滑动关系，不声称毫米级复刻某一型号。传感器和表壳细节作识别性简化；真实产品以官方指南为准。"
+        }
+      ]
+    },
+    {
+      "kicker": "样章 02 / 从情境进入原理",
+      "title": "活塞来回，水却向前",
+      "lead": "往返运动只改变容积；真正决定水往哪走的，是两只单向阀。",
+      "blocks": [
+        {
+          "type": "figure",
+          "id": "F05"
+        },
+        {
+          "type": "paragraph",
+          "text": "倒水时，水顺着高度差流走。泵则由外部机械功驱动，改变腔体压力，再通过阀门把流动组织起来；不能把“吸水”理解成活塞隔空抓住了水。[S2][S3]"
+        },
+        {
+          "type": "figure",
+          "id": "F06"
+        },
+        {
+          "type": "callout",
+          "label": "先认结构",
+          "text": "蓝色为水与当前流向，灰色为固体。活塞右侧不是本模型的工作腔；剖开只是为了看内部，并非真的缺了一面缸壁。"
+        }
+      ]
+    },
+    {
+      "kicker": "样章 02 / 同一机构的两个状态",
+      "title": "两扇门，轮流打开",
+      "lead": "跟着活塞看腔体大小，再看哪个阀离开阀座。",
+      "blocks": [
+        {
+          "type": "figure",
+          "id": "F07"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "当前状态",
+            "左侧工作腔",
+            "入口阀 / 出口阀"
+          ],
+          "rows": [
+            [
+              "吸入：活塞向右",
+              "容积增大，水从入口进入",
+              "开 / 关"
+            ],
+            [
+              "排出：活塞向左",
+              "容积减小，水从出口排出",
+              "关 / 开"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "止回阀响应压差，不需要人按顺序去开关。若取消它们，单凭活塞往返就不能保证本图的单向输送。这里省略驱动曲柄、真实密封设计、瞬态损失和气蚀等问题。[S2][S3]"
+        },
+        {
+          "type": "callout",
+          "label": "安全与适用范围",
+          "text": "这是单作用泵的教学模型，不对应任何产品的压力等级、尺寸或可制造设计。不要按图制作密闭加压装置或把它用于维修。"
+        }
+      ]
+    }
+  ]
+}

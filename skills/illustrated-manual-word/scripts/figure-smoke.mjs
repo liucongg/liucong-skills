@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import * as k from '../assets/vendor/anatomy/kit/iso-kit.mjs';
+
+const out = process.argv[2];
+if (!out) throw new Error('Usage: node figure-smoke.mjs output.svg');
+const W = 900, H = 510;
+const base = {x: 0, y: 0, w: 180, d: 100, r: 5};
+const P = k.fitProjection([...k.boxCorners(base, 0, 18), [22, 20, 98], [155, 65, 85]], W, H, {pad: 85});
+const draw = [];
+const part = (id, paths, opt = {}) => `<g data-part="${id}">${k.solidSvg(paths, opt)}</g>`;
+const feet = [[10,10], [170,10], [10,90], [170,90]].sort((a,b)=>k.depthOf([...a,0],P)-k.depthOf([...b,0],P));
+for (const xy of feet) draw.push(part('P01', k.cylinder(...xy, 6, 0, 8, P, 24), {tone:'lo'}));
+draw.push(part('P01', k.slabOf(base, 8, 10, P, 8, 1), {tone:'mid'}));
+const posts = [[24,20],[155,20]].sort((a,b)=>k.depthOf([...a,50],P)-k.depthOf([...b,50],P));
+for (const [x,y] of posts) draw.push(part('P02', k.cylinder(x,y,7,18,69,P,40,0.5), {tone:'mid'}));
+draw.push(part('P02', k.slabOf({x:14,y:10,w:151,d:20,r:3},87,7,P,6,0.5), {tone:'mid'}));
+draw.push(part('P03', k.slabOf({x:58,y:30,w:58,d:46,r:4},18,20,P,8,0.8), {tone:'hi',lit:true}));
+const screwDots = k.pointsAt(k.corners(base, 9).map(([x,y])=>[x,y,18]),P);
+draw.push(k.dotsSvg(screwDots,{size:2,tone:'mid'}));
+const label = (point, tx, ty, text) => {
+  const [x,y] = k.iso(point,P);
+  return `<path d="M${x} ${y}L${tx-12} ${ty-6}" fill="none" stroke="#52636a" stroke-width="1.7"/><circle cx="${x}" cy="${y}" r="3" fill="#52636a"/><text x="${tx}" y="${ty}" font-size="22" fill="#25343b" font-family="sans-serif">${text}</text>`;
+};
+draw.push(label([5,85,18],90,440,'01 底座'));
+draw.push(label([155,20,87],620,92,'02 支架'));
+draw.push(label([110,60,38],675,355,'03 滑块'));
+let svg = k.figureSvg({width:W,height:H,label:'Anatomy 绘图库与纸面标注的技术验收夹具，不是正式样书插图',body:draw,standalone:'light'});
+svg = svg.replace('<svg ',`<svg width="${W}" height="${H}" `);
+fs.mkdirSync(path.dirname(path.resolve(out)),{recursive:true});
+fs.writeFileSync(out,svg);
+console.log(JSON.stringify({ok:true,out:path.resolve(out),library:'Anatomy iso-kit.mjs',purpose:'technical smoke only',parts:3}));

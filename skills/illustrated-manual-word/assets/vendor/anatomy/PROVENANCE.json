@@ -1,0 +1,129 @@
+{
+  "project": "Anatomy",
+  "repository": "https://github.com/wheresryan22/anatomy",
+  "download_url": "https://skills.wheresryan.sh/anatomy/anatomy.zip",
+  "archive_sha256": "fa1164f8c8410fa7ccc129958df85671ee86e8c650dc65e0c85f83384fa2dae2",
+  "retrieved_at": "2026-10-11T14:15:32.956879+00:00",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796"
+    },
+    {
+      "path": "kit/audit.mjs",
+      "sha256": "2e92d6e4c18b05c4cb55d72d378bba3cb854a169b19e16d5ca8eb5ebc2fe234b"
+    },
+    {
+      "path": "kit/canvas-painter.mjs",
+      "sha256": "1918db10279c9d9df87d7df52c7ed8c2de8acd0bbce214c8f2115a39e7f955ac"
+    },
+    {
+      "path": "kit/gl-shared.mjs",
+      "sha256": "8c3773cf3e15844df332db3ba55af940186edb2227201e5839347ecc390c039c"
+    },
+    {
+      "path": "kit/gl.mjs",
+      "sha256": "17a477411e0b9fcb8e84e718094eaefa6be2c0b7d6ce15ee03fe8e252944130a"
+    },
+    {
+      "path": "kit/iso-kit.mjs",
+      "sha256": "6d3ecc725d30c3b0346da309cf61dfa5a65017c23620bbd4093009d4fb104018"
+    },
+    {
+      "path": "kit/iso-kit.ts",
+      "sha256": "e9fc988c61a11bfac1f097e62419915ea86b2130ab091f1b50c0e019c907e253"
+    },
+    {
+      "path": "kit/iso.css",
+      "sha256": "ef19bac5a42ba9be42b56b2c1cf7fc7e21d332a8060765e9ca1d987b8ab23924"
+    },
+    {
+      "path": "kit/lathe.mjs",
+      "sha256": "a4e7e974b1a37e603ad2b76363b6f9815cc101dfff0ad277a5d4e8f1dc56fccb"
+    },
+    {
+      "path": "kit/react/draw.tsx",
+      "sha256": "ff54d8accd862d468648941701e6e0530031d6a776058cd0e99d288ef406b662"
+    },
+    {
+      "path": "kit/react/live.tsx",
+      "sha256": "cc7c38f1bd788f7c2bd1417b6d8f1bd8f8a90c2c7abcb41f6dd074703f93d153"
+    },
+    {
+      "path": "kit/tube.mjs",
+      "sha256": "bcb3cc360f6d83e6a5753f4c464b4587ab7965028b05a5d58e285abce58667c9"
+    },
+    {
+      "path": "kit/turn-audit.mjs",
+      "sha256": "e118b838c00621eb5d86409552b75b50d02c303eaedefc008146a7c62c2eaefd"
+    },
+    {
+      "path": "kit/turn-build.mjs",
+      "sha256": "c2b96e40044b4698c69c472ef85572ae17a3b59de3b6da210884b9a5d0bbf6a3"
+    },
+    {
+      "path": "kit/turn-fixed.mjs",
+      "sha256": "7429b46eb7673aefb6ed90adeaf130c1dafe8e32af038cbde24a04e693d13fc7"
+    },
+    {
+      "path": "kit/turn.mjs",
+      "sha256": "cb4b530b5e1750ba0e4fd2367d5f25e00195c0136672aa2ecd665c0622ffd1a2"
+    },
+    {
+      "path": "references/3d.md",
+      "sha256": "de58da5415b4c9fe7712b5b71e0868c4d36363d54e4e32d98a6b016363554536"
+    },
+    {
+      "path": "references/craft.md",
+      "sha256": "38761fa9b81d66b30e50b05488501d4815830d3627f153d60f76ca783f598936"
+    },
+    {
+      "path": "references/kit.md",
+      "sha256": "1a0c163ef83a47cc1fad89e7f731bd31e30d0cd93ece8801200f1b0614b082e7"
+    },
+    {
+      "path": "references/motion.md",
+      "sha256": "dda401ca1b4661a5f0b7c1e33dac6e7e4b8c13d51ca5d9312123a5c02dab320b"
+    },
+    {
+      "path": "references/react.md",
+      "sha256": "76b5cee6e0a7513e3c77a832e3f58b1343806597d469774e1749f141525801fd"
+    },
+    {
+      "path": "references/verify.md",
+      "sha256": "fb81437fc5d75094a34432eb6f545644aa228e15173a27d08b3cace912033561"
+    },
+    {
+      "path": "references/walkthrough.md",
+      "sha256": "4d157e0169080a6ed44d5b06de0a5de2931baf3d0fac30283d2644dd66506dfa"
+    },
+    {
+      "path": "references/webgl.md",
+      "sha256": "fb4e2421c6a705d4ad849c8e516731ebc958bc5ff0855548ff58232b0aa01923"
+    }
+  ],
+  "supplemental_example": {
+    "retrieved_on": "2026-10-12",
+    "purpose": "complete closest example for actual craft study",
+    "source": "https://skills.wheresryan.sh/anatomy/anatomy.zip",
+    "files": [
+      {
+        "path": "examples/desk-computer/build.mjs",
+        "sha256": "d378f9814acf75bc915921d4f2d83ed1eb4991a8b4298eb0de0e10383b2ff66d"
+      },
+      {
+        "path": "examples/desk-computer/desk-computer-light.html",
+        "sha256": "ce63c5bed81b76491a82f5e94d22e5f64744c87bc448fdad8726ae0c6ecd0b59"
+      },
+      {
+        "path": "examples/desk-computer/desk-computer.html",
+        "sha256": "94f04084c1ce997a88e60fc0b4d9c5b6dbe859b95ee0dd7a10603e648fced2bc"
+      },
+      {
+        "path": "scripts/inline-kit.mjs",
+        "sha256": "01e08df7c2556ce52a7e8ed9009a332036b209ab7e42389874af2a65fda6e9db"
+      }
+    ]
+  }
+}

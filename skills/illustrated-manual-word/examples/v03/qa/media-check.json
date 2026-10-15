@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "errors": [],
+  "assets": [
+    {
+      "id": "A01",
+      "method": "svg",
+      "pixels": [
+        2400,
+        1375
+      ],
+      "ppi": 406.4
+    },
+    {
+      "id": "A02",
+      "method": "svg",
+      "pixels": [
+        2400,
+        1111
+      ],
+      "ppi": 371.7
+    },
+    {
+      "id": "A03",
+      "method": "svg",
+      "pixels": [
+        2400,
+        1114
+      ],
+      "ppi": 371.7
+    },
+    {
+      "id": "A04",
+      "method": "svg",
+      "pixels": [
+        2400,
+        560
+      ],
+      "ppi": 371.7
+    },
+    {
+      "id": "A05",
+      "method": "generated",
+      "pixels": [
+        2816,
+        1584
+      ],
+      "ppi": 483.3
+    },
+    {
+      "id": "A06",
+      "method": "svg",
+      "pixels": [
+        2400,
+        1274
+      ],
+      "ppi": 390.8
+    },
+    {
+      "id": "A07",
+      "method": "svg",
+      "pixels": [
+        2400,
+        2501
+      ],
+      "ppi": 417.5
+    }
+  ],
+  "scope": "file/provenance declarations only; not rights certification or visual approval"
+}

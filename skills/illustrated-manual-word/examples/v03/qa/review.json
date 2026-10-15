@@ -1,0 +1,33 @@
+{
+  "docx_sha256": "257532022f26f0845a06d6e95dccce6da46ff88c2f0803c287a36d3a43e41f57",
+  "pages": [
+    {
+      "page": 1,
+      "reviewed": false,
+      "issues": []
+    },
+    {
+      "page": 2,
+      "reviewed": false,
+      "issues": []
+    },
+    {
+      "page": 3,
+      "reviewed": false,
+      "issues": []
+    },
+    {
+      "page": 4,
+      "reviewed": false,
+      "issues": []
+    },
+    {
+      "page": 5,
+      "reviewed": false,
+      "issues": []
+    }
+  ],
+  "science_reviewed": false,
+  "science_notes": "",
+  "limitations": []
+}

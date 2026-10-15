@@ -7,6 +7,7 @@
 | Skill | 用途 |
 | --- | --- |
 | [`design-led-website-builder`](skills/design-led-website-builder/) | 从简短需求出发，先锁定网站用途，再研究同类真实网站、收集可用视觉素材，最后完成有明确设计方向的网站或改版。适合新建网站和视觉重构，不用于普通 Bug 修复或文案微调。 |
+| [`illustrated-manual-word`](skills/illustrated-manual-word/) | 将技术资料制作成含结构图、原理图和步骤图的可编辑 Word 手册，包含来源核查、图片与 SVG 制作、排版渲染和逐页验收。 |
 | [`liucong-model-eval`](skills/liucong-model-eval/) | 初始化并运行可追溯的多模型同题对照测评，支持内置演示题、自有题库和权威视觉 benchmark 子集；隔离被测进程，保留首轮回答、工具轨迹、产物与验收记录。 |
 | [`painterly-3d2-cinema`](skills/painterly-3d2-cinema/) | 把一句话扩展成三渲二动作短片提示词生产包，覆盖剧情方向、角色、场景、Midjourney V8.1 故事板和 Seedance 视频提示词。只生成提示词，不直接生成图片或视频。这个 Skill 在视频平台的 Agent 上使用，效果更佳。 |
 | [`gzh-title-strategist`](skills/gzh-title-strategist/) | 分析微信公众号文章，基于文章真实价值、目标读者、事实证据和历史数据生成、改写、批评并排序多风格标题，同时检查标题党、关键词堆砌与时效风险。 |
@@ -211,6 +212,33 @@ node scripts/runner.mjs export
 $liucong-model-eval 用我的题库对照测试两个模型，先做 dry run，把题号、模型和预算列给我确认。
 ```
 
+## 安装和使用 `illustrated-manual-word`
+
+将 Skill 链接到 Agent 的 Skills 目录，或复制 `skills/illustrated-manual-word/` 整个目录。示例、模板、绘图库及其许可证都在此目录内：
+
+```bash
+export SKILLS_HOME="/path/to/your-agent/skills"
+mkdir -p "$SKILLS_HOME"
+ln -s "$(pwd)/skills/illustrated-manual-word" "$SKILLS_HOME/illustrated-manual-word"
+```
+
+脚本需要 Python 3.9 或更新版本。Word 构建依赖 `python-docx` 和 Pillow；要完成渲染验收，还需要 PyMuPDF 和 LibreOffice。SVG 栅格化需安装 rsvg-convert、CairoSVG 或 Chrome。建议在独立虚拟环境安装 Python 依赖，并先检查本机工具：
+
+```bash
+cd skills/illustrated-manual-word
+python3 -m venv .venv
+.venv/bin/python -m pip install -r scripts/requirements.txt
+.venv/bin/python scripts/manual.py preflight
+```
+
+在 Agent 中提供对象、型号或版本、读者和用途；缺省按中文、A4 纵向、非专业读者制作。可以直接调用：
+
+```text
+$illustrated-manual-word 根据这份产品资料制作一份图解 Word 手册，先做小样章，说明结构、工作原理和操作步骤。
+```
+
+Skill 会先核查资料与图片使用权，再制作图文、生成可编辑 `.docx`、实际渲染并逐页检查。`examples/v03/` 提供表带操作与活塞泵样章及离线重建材料；示例的最终科学与逐页验收记录尚未完成，不能直接当作已认证手册。当前只在 macOS 验证过工具链，Linux、Windows 及其他 Agent 宿主需本地测试。详细命令与限制见 [Skill 说明](skills/illustrated-manual-word/README.md)。
+
 ## 更新
 
 软链接安装时，只需更新仓库：
@@ -245,4 +273,4 @@ skills/
 
 ## License
 
-[Apache License 2.0](LICENSE)
+仓库默认采用 [Apache License 2.0](LICENSE)。`illustrated-manual-word` 的自有代码和方法按其目录内的 [MIT License](skills/illustrated-manual-word/LICENSE) 发布；随附 Anatomy 绘图库保留自己的 [MIT 许可证和来源记录](skills/illustrated-manual-word/assets/vendor/anatomy/)。第三方图片及品牌素材不因本仓库许可证而获得再授权。

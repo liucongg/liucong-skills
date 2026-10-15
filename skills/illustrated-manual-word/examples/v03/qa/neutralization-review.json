@@ -1,0 +1,20 @@
+{
+  "scope": "Neutralization and layout review of the included sample; not new scientific or rights certification.",
+  "docx_sha256": "257532022f26f0845a06d6e95dccce6da46ff88c2f0803c287a36d3a43e41f57",
+  "renderer": "LibreOffice",
+  "page_count": 5,
+  "reviewed_pages": [1, 2, 3, 4, 5],
+  "metadata_and_identity_scan": "passed",
+  "observations": [
+    "Pages 1 and 2 retain the operation diagrams, warnings and table without personal attribution.",
+    "Pages 3 and 4 retain context-image disclosure, pump-state diagrams and safety boundaries without personal attribution.",
+    "Page 5 is an explicitly identified reference appendix, not an additional content chapter.",
+    "No clipped text, misplaced captions or blank content pages observed in the included five-page sample."
+  ],
+  "limitations": [
+    "Original technical content and illustrations were retained; external sources were not newly re-researched.",
+    "Third-party licenses and required source or AI-image disclosures were retained.",
+    "Historical neutralized documents were rendered and identity-scanned; this does not newly qualify them as visual benchmarks.",
+    "Other operating systems and Agent platforms were not tested."
+  ]
+}
